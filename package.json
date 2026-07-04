@@ -1,0 +1,76 @@
+{
+    "author": "Gilles",
+    "dependencies": {
+        "clay": "^2.24.1"
+    },
+    "keywords": [
+        "pebble-app"
+    ],
+    "name": "nonius",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "Vernier scale",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "DarkMode"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/dial_bitmap.png",
+                    "name": "OuterDial",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite",
+                        "emery",
+                        "gabbro",
+                        "flint"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "data/dial_raw.png",
+                    "name": "OuterDialRaw",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite",
+                        "emery",
+                        "gabbro",
+                        "flint"
+                    ],
+                    "type": "raw"
+                },
+                {
+                    "file": "images/banner.png",
+                    "name": "banner",
+                    "targetPlatforms": [
+                        "emery"
+                    ],
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite",
+            "emery",
+            "gabbro",
+            "flint"
+        ],
+        "uuid": "feaf170c-b061-463a-bc61-8f72530d607f",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "0.2.2"
+}
