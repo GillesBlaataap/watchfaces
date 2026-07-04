@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+</head>
+<body>
+  <h1>Display Settings</h1>
+  <label>
+    <input type="checkbox" id="darkmode">
+    Dark Mode
+  </label>
+
+  <button id="save">Save</button>
+
+  <script>
+    document.getElementById("save").addEventListener("click", function() {
+      var config = {
+        DarkMode: document.getElementById("darkmode").checked
+      };
+      document.location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(config));
+    });
+  </script>
+</body>
+</html>
